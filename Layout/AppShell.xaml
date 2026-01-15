@@ -5,10 +5,16 @@
     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
     xmlns:local="clr-namespace:Layout"
     Title="Layout">
-
+    <TabBar>
+        
     <ShellContent
         Title="Home"
         ContentTemplate="{DataTemplate local:MainPage}"
         Route="MainPage" />
 
+        <ShellContent
+    Title="NewPage1"
+    ContentTemplate="{DataTemplate local:NewPage1}"
+    Route="NewPage1" />
+    </TabBar>
 </Shell>
