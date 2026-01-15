@@ -1,0 +1,235 @@
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Layout.NewPage1"
+             Title="NewPage1">
+
+    <ScrollView>
+        <Grid RowDefinitions="Auto,Auto,Auto"
+              Padding="10"
+              RowSpacing="20"
+              ColumnDefinitions="*,*">
+
+            <!-- PIERWSZY BORDER -->
+            <Border Grid.Row="0"
+                    Margin="5"
+                    Grid.Column="0"
+                    Stroke="Purple"
+                    StrokeThickness="4"
+                    Padding="16,8">
+
+                <VerticalStackLayout>
+                    <Image Source="goryl.png"
+                           HeightRequest="200"/>
+
+                    <Label Text="Goryl"
+                           FontSize="40"/>
+
+                    <Label Text="Goryle są dużymi małpami zamieszkującymi lasy tropikalne Afryki Środkowej..."
+                           FontSize="18"
+                           TextColor="Grey"/>
+
+                    <Label Text="Cena 249.999,99zł"
+                           TextColor="Green"
+                           FontSize="20"/>
+
+                    <HorizontalStackLayout>
+                        <Label Text="Ocena:" FontSize="18"/>
+                        <Label Text="★" TextColor="Gold"/>
+                        <Label Text="★" TextColor="Gold"/>
+                        <Label Text="★" TextColor="Gold"/>
+                        <Label Text="★" TextColor="Gold"/>
+                        <Label Text="★" TextColor="Gold"/>
+                    </HorizontalStackLayout>
+
+                    <HorizontalStackLayout HorizontalOptions="Center">
+                        <Button Text="Kup teraz"
+                                BackgroundColor="Orange"
+                                TextColor="White"/>
+                        <Button Text="Dodaj do koszyka"
+                                BackgroundColor="LightGray"
+                                TextColor="Black"/>
+                    </HorizontalStackLayout>
+                </VerticalStackLayout>
+
+            </Border>
+
+            <!-- DRUGI BORDER -->
+            <Border Grid.Row="1"
+                    Margin="5"
+                    Grid.Column="0"
+                    Stroke="Purple"
+                    StrokeThickness="4"
+                    Padding="16,8">
+
+                <VerticalStackLayout>
+                    <Image Source="goryl.png"
+                           HeightRequest="200"/>
+
+                    <Label Text="Goryl"
+                           FontSize="40"/>
+
+                    <Label Text="Goryle są dużymi małpami zamieszkującymi lasy tropikalne Afryki Środkowej..."
+                           FontSize="18"
+                           TextColor="Grey"/>
+
+                    <Label Text="Cena 249.999,99zł"
+                           TextColor="Green"
+                           FontSize="20"/>
+
+                    <HorizontalStackLayout>
+                        <Label Text="Ocena:" FontSize="18"/>
+                        <Label Text="★" TextColor="Gold"/>
+                        <Label Text="★" TextColor="Gold"/>
+                        <Label Text="★" TextColor="Gold"/>
+                        <Label Text="★" TextColor="Gold"/>
+                        <Label Text="★" TextColor="Gold"/>
+                    </HorizontalStackLayout>
+
+                    <HorizontalStackLayout HorizontalOptions="Center">
+                        <Button Text="Kup teraz"
+                                BackgroundColor="Orange"
+                                TextColor="White"/>
+                        <Button Text="Dodaj do koszyka"
+                                BackgroundColor="LightGray"
+                                TextColor="Black"/>
+                    </HorizontalStackLayout>
+                </VerticalStackLayout>
+
+            </Border>
+            <!-- TRZECI BORDER -->
+            <Border Grid.Row="1"
+                    Margin="5"
+        Grid.Column="1"
+        Stroke="Purple"
+        StrokeThickness="4"
+        Padding="16,8">
+
+                <VerticalStackLayout>
+                    <Image Source="goryl.png"
+               HeightRequest="200"/>
+
+                    <Label Text="Goryl"
+               FontSize="40"/>
+
+                    <Label Text="Goryle są dużymi małpami zamieszkującymi lasy tropikalne Afryki Środkowej..."
+               FontSize="18"
+               TextColor="Grey"/>
+
+                    <Label Text="Cena 249.999,99zł"
+               TextColor="Green"
+               FontSize="20"/>
+
+                    <HorizontalStackLayout>
+                        <Label Text="Ocena:" FontSize="18"/>
+                        <Label Text="★" TextColor="Gold"/>
+                        <Label Text="★" TextColor="Gold"/>
+                        <Label Text="★" TextColor="Gold"/>
+                        <Label Text="★" TextColor="Gold"/>
+                        <Label Text="★" TextColor="Gold"/>
+                    </HorizontalStackLayout>
+
+                    <HorizontalStackLayout HorizontalOptions="Center">
+                        <Button Text="Kup teraz"
+                    BackgroundColor="Orange"
+                    TextColor="White"/>
+                        <Button Text="Dodaj do koszyka"
+                    BackgroundColor="LightGray"
+                    TextColor="Black"/>
+                    </HorizontalStackLayout>
+                </VerticalStackLayout>
+
+            </Border>
+
+            <!-- CZWARTY BORDER -->
+            <Border Grid.Row="2"
+                    Margin="5"
+                    Grid.Column="0"
+                    Grid.ColumnSpan="2"
+                    Stroke="Purple"
+                    StrokeThickness="3"
+                    Padding="20">
+
+                <VerticalStackLayout>
+                    <Image Source="goryl.png"
+       HeightRequest="200"/>
+
+                    <Label Text="Goryl"
+       FontSize="40"/>
+
+                    <Label Text="Goryle są dużymi małpami zamieszkującymi lasy tropikalne Afryki Środkowej..."
+       FontSize="18"
+       TextColor="Grey"/>
+
+                    <Label Text="Cena 249.999,99zł"
+       TextColor="Green"
+       FontSize="20"/>
+
+                    <HorizontalStackLayout>
+                        <Label Text="Ocena:" FontSize="18"/>
+                        <Label Text="★" TextColor="Gold"/>
+                        <Label Text="★" TextColor="Gold"/>
+                        <Label Text="★" TextColor="Gold"/>
+                        <Label Text="★" TextColor="Gold"/>
+                        <Label Text="★" TextColor="Gold"/>
+                    </HorizontalStackLayout>
+
+                    <HorizontalStackLayout HorizontalOptions="Center">
+                        <Button Text="Kup teraz"
+            BackgroundColor="Orange"
+            TextColor="White"/>
+                        <Button Text="Dodaj do koszyka"
+            BackgroundColor="LightGray"
+            TextColor="Black"/>
+                    </HorizontalStackLayout>
+                </VerticalStackLayout>
+
+            </Border>
+
+            <!-- PIĄTY BORDER -->
+            <Border Grid.Row="0"
+                    Margin="5"
+Grid.Column="2"
+Stroke="Purple"
+StrokeThickness="4"
+Padding="16,8">
+
+                <VerticalStackLayout>
+                    <Image Source="goryl.png"
+       HeightRequest="200"/>
+
+                    <Label Text="Goryl"
+       FontSize="40"/>
+
+                    <Label Text="Goryle są dużymi małpami zamieszkującymi lasy tropikalne Afryki Środkowej..."
+       FontSize="18"
+       TextColor="Grey"/>
+
+                    <Label Text="Cena 249.999,99zł"
+       TextColor="Green"
+       FontSize="20"/>
+
+                    <HorizontalStackLayout>
+                        <Label Text="Ocena:" FontSize="18"/>
+                        <Label Text="★" TextColor="Gold"/>
+                        <Label Text="★" TextColor="Gold"/>
+                        <Label Text="★" TextColor="Gold"/>
+                        <Label Text="★" TextColor="Gold"/>
+                        <Label Text="★" TextColor="Gold"/>
+                    </HorizontalStackLayout>
+
+                    <HorizontalStackLayout HorizontalOptions="Center">
+                        <Button Text="Kup teraz"
+            BackgroundColor="Orange"
+            TextColor="White"/>
+                        <Button Text="Dodaj do koszyka"
+            BackgroundColor="LightGray"
+            TextColor="Black"/>
+                    </HorizontalStackLayout>
+                </VerticalStackLayout>
+
+            </Border>
+
+        </Grid>
+    </ScrollView>
+
+</ContentPage>
