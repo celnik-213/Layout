@@ -4,6 +4,8 @@
              x:Class="Layout.NewPage2"
              Title="NewPage2">
     <VerticalStackLayout>
+        
+    <VerticalStackLayout>
         <Label 
             Text="Galeria zdjęć"
             FontSize="28"
@@ -14,16 +16,122 @@
             BackgroundColor="Orange"
             TextColor="White"
             WidthRequest="150"
+            Margin="10"
             />
+    </VerticalStackLayout>
+
+        <VerticalStackLayout>
+            <Label Padding="20"
+               Text="Galeria: "
+               HorizontalOptions="Center"
+               FontSize="20"/>
         <ScrollView>
             <FlexLayout Wrap="Wrap" JustifyContent="SpaceAround">
-            <BoxView Color="Red" WidthRequest="100" HeightRequest="100" Margin="5">
-                    <BoxView.GestureRecognizers>
-                        <TapGestureRecognizer Tapped="OnThumbnailTapped"/>
-                    </BoxView.GestureRecognizers>
-            </BoxView>
-        </FlexLayout>
-        </ScrollView>
+                <Grid HeightRequest="100" WidthRequest="100">
+                    <BoxView BackgroundColor="Red" WidthRequest="100" HeightRequest="100"/>
+                    <Image
+            Source="goryl.png"
+            WidthRequest="90"
+            HeightRequest="90">
+                        <Image.GestureRecognizers>
+                            <TapGestureRecognizer Tapped="OnThumbnailTapped"/>
+                        </Image.GestureRecognizers>
+                    </Image>
+                </Grid>
+                <Grid HeightRequest="100" WidthRequest="100">
+                    <BoxView BackgroundColor="Purple" WidthRequest="100" HeightRequest="100"/>
+                    <Image
+            Source="goryl.png"
+            WidthRequest="90"
+            HeightRequest="90">
+                        <Image.GestureRecognizers>
+                            <TapGestureRecognizer Tapped="OnThumbnailTapped"/>
+                        </Image.GestureRecognizers>
+                    </Image>
+                </Grid>
+                <Grid HeightRequest="100" WidthRequest="100">
+                    <BoxView BackgroundColor="ForestGreen" WidthRequest="100" HeightRequest="100"/>
+                    <Image
+                            Source="goryl.png"
+                            WidthRequest="90"
+                            HeightRequest="90">
+                        <Image.GestureRecognizers>
+                            <TapGestureRecognizer Tapped="OnThumbnailTapped"/>
+                        </Image.GestureRecognizers>
+                    </Image>
+                </Grid>
+                    <Grid HeightRequest="100" WidthRequest="100">
+                        <BoxView BackgroundColor="Blue" WidthRequest="100" HeightRequest="100"/>
+                        <Image
+            Source="goryl.png"
+            WidthRequest="90"
+            HeightRequest="90">
+                            <Image.GestureRecognizers>
+                                <TapGestureRecognizer Tapped="OnThumbnailTapped"/>
+                            </Image.GestureRecognizers>
+                        </Image>
+                    </Grid>
+                    <Grid HeightRequest="100" WidthRequest="100">
+                        <BoxView BackgroundColor="Yellow" WidthRequest="100" HeightRequest="100"/>
+                        <Image
+Source="goryl.png"
+WidthRequest="90"
+HeightRequest="90">
+                            <Image.GestureRecognizers>
+                                <TapGestureRecognizer Tapped="OnThumbnailTapped"/>
+                            </Image.GestureRecognizers>
+                        </Image>
+                    </Grid>
+                    <Grid HeightRequest="100" WidthRequest="100">
+                        <BoxView BackgroundColor="Pink" WidthRequest="100" HeightRequest="100"/>
+                        <Image
+Source="goryl.png"
+WidthRequest="90"
+HeightRequest="90">
+                            <Image.GestureRecognizers>
+                                <TapGestureRecognizer Tapped="OnThumbnailTapped"/>
+                            </Image.GestureRecognizers>
+                        </Image>
+                        
+                    </Grid>
+                    <Grid HeightRequest="100" WidthRequest="100">
+                        <BoxView BackgroundColor="Grey" WidthRequest="100" HeightRequest="100"/>
+                        <Image
+Source="goryl.png"
+WidthRequest="90"
+HeightRequest="90">
+                            <Image.GestureRecognizers>
+                                <TapGestureRecognizer Tapped="OnThumbnailTapped"/>
+                            </Image.GestureRecognizers>
+                        </Image>
 
+                    </Grid>
+                </FlexLayout>
+        </ScrollView>
     </VerticalStackLayout>
+        <VerticalStackLayout
+            Margin="10">
+            <Label
+                Text="Obecna ilość zdjęć: 6"
+                FontSize="25"
+                HorizontalOptions="Center"/>
+            <HorizontalStackLayout HorizontalOptions="Center">
+                
+            <Button 
+                Text="Poprzednia strona"
+                BackgroundColor="Orange"
+                TextColor="White"
+                WidthRequest="150"
+/>
+            <Button 
+    Text="Następna strona"
+    BackgroundColor="Orange"
+    TextColor="White"
+                WidthRequest="150"
+/>
+            </HorizontalStackLayout>
+
+        </VerticalStackLayout>
+    </VerticalStackLayout>
+
 </ContentPage>
