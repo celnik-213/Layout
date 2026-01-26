@@ -21,3 +21,4 @@ public partial class NewPage2 : ContentPage
 		}
 	}
 }
+
