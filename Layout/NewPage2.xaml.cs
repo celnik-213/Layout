@@ -16,7 +16,7 @@ public partial class NewPage2 : ContentPage
 		{
 			await DisplayAlert(
 				"Miniatura",
-				"Klikniêto w miniaturê w galerii",
+				"Kliknięto w miniaturę w galerii",
 				"OK");
 		}
 	}
