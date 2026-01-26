@@ -15,9 +15,9 @@ public partial class NewPage2 : ContentPage
 		if (thumbnai != null)
 		{
 			await DisplayAlert(
-				"Miniatura",
-				"Kliknięto w miniaturę w galerii",
-				"OK");
+				"SZYMPANS",
+				"Fajny Goryl co nie???",
+				"GORYL");
 		}
 	}
 }

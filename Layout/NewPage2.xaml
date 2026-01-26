@@ -145,12 +145,14 @@ HeightRequest="90">
                 BackgroundColor="Orange"
                 TextColor="White"
                 WidthRequest="150"
+                Margin="10"
 />
             <Button 
     Text="Następna strona"
     BackgroundColor="Orange"
     TextColor="White"
                 WidthRequest="150"
+                Margin="10"
 />
             </HorizontalStackLayout>
 
