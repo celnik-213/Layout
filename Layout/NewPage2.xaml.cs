@@ -7,8 +7,10 @@ public partial class NewPage2 : ContentPage
 	public NewPage2()
 	{
 		InitializeComponent();
-	}
-    private async void OnThumbnailTapped(object sender, EventArgs e)
+        UpdateImagesCount();
+
+    }
+	private async void OnThumbnailTapped(object sender, EventArgs e)
 	{
 		var thumbnai = sender as Image;
 
@@ -20,5 +22,26 @@ public partial class NewPage2 : ContentPage
 				"GORYL");
 		}
 	}
+    private void UpdateImagesCount()
+    {
+        int count = 0;
+
+        foreach (var child in GalleryLayout.Children)
+        {
+            if (child is Grid grid)
+            {
+                foreach (var gridChild in grid.Children)
+                {
+                    if (gridChild is Image)
+                    {
+                        count++;
+                    }
+                }
+            }
+        }
+
+        ImagesCountLabel.Text = $"Obecna iloœæ zdjêæ: {count}";
+    }
+
 }
 
