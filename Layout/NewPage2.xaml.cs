@@ -13,8 +13,9 @@ public partial class NewPage2 : ContentPage
 	private async void OnThumbnailTapped(object sender, EventArgs e)
 	{
 		var thumbnai = sender as Image;
+        var thumbnai2 = sender as BoxView;
 
-		if (thumbnai != null)
+		if (thumbnai != null || thumbnai2 != null)
 		{
 			await DisplayAlert(
 				"SZYMPANS",

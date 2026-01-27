@@ -20,8 +20,8 @@
                 <VerticalStackLayout>
                     <Image Source="goryl.png"
                            HeightRequest="200"/>
-
                     <Label Text="Goryl"
+
                            FontSize="40"/>
 
                     <Label Text="Goryle są dużymi małpami zamieszkującymi lasy tropikalne Afryki Środkowej..."

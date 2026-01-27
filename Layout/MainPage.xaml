@@ -11,8 +11,8 @@
             Padding="30">
 
             <Image 
-             Source="goryl.png"
-             WidthRequest="100"
+                Source="goryl.png"
+                WidthRequest="100"
              />
             <Label 
                 Text="Zaloguj się"
@@ -27,10 +27,11 @@
                  Text="Zaloguj"/>
             <HorizontalStackLayout>
             <Label
-            Text="Nie masz konta? Zarejestruj się"
-            TextColor="Blue"
-            TextDecorations="Underline"    
-            Margin="0,10,0,0" />
+                HorizontalOptions="Center"
+                Text="Nie masz konta? Zarejestruj się"
+                TextColor="Blue"
+                TextDecorations="Underline"    
+                Margin="0,10,0,0" />
             </HorizontalStackLayout>
 
 

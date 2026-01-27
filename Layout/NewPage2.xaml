@@ -7,12 +7,12 @@
 
         <VerticalStackLayout>
             <Label 
-            Text="Galeria zdjęć"
+            Text="Galeria zdjęć📸"
             FontSize="28"
             VerticalOptions="Center" 
             HorizontalOptions="Center" />
         <Button
-            Text="Dodaj zdjęcie"
+            Text="Dodaj zdjęcie🖼️"
             BackgroundColor="Orange"
             TextColor="White"
             WidthRequest="150"
@@ -28,11 +28,15 @@
         <ScrollView>
           <FlexLayout x:Name="GalleryLayout" Wrap="Wrap" JustifyContent="SpaceAround">
                 <Grid HeightRequest="100" WidthRequest="100">
-                    <BoxView BackgroundColor="Red" WidthRequest="100" HeightRequest="100"/>
-                    <Image
-            Source="goryl.png"
-            WidthRequest="90"
-            HeightRequest="90">
+                        <BoxView BackgroundColor="Red" WidthRequest="100" HeightRequest="100">
+                            <BoxView.GestureRecognizers>
+                                <TapGestureRecognizer Tapped="OnThumbnailTapped"/>
+                            </BoxView.GestureRecognizers>
+                        </BoxView>
+                        <Image
+                        Source="goryl.png"
+                        WidthRequest="90"
+                        HeightRequest="90">
                         <Image.GestureRecognizers>
                             <TapGestureRecognizer Tapped="OnThumbnailTapped"/>
                         </Image.GestureRecognizers>
@@ -40,11 +44,15 @@
                 </Grid>
 
                 <Grid HeightRequest="100" WidthRequest="100">
-                    <BoxView BackgroundColor="Purple" WidthRequest="100" HeightRequest="100"/>
-                    <Image
-            Source="goryl.png"
-            WidthRequest="90"
-            HeightRequest="90">
+                        <BoxView BackgroundColor="Purple" WidthRequest="100" HeightRequest="100">
+                            <BoxView.GestureRecognizers>
+                                <TapGestureRecognizer Tapped="OnThumbnailTapped"/>
+                            </BoxView.GestureRecognizers>
+                        </BoxView>
+                        <Image
+                        Source="goryl.png"
+                        WidthRequest="90"
+                        HeightRequest="90">
                         <Image.GestureRecognizers>
                             <TapGestureRecognizer Tapped="OnThumbnailTapped"/>
                         </Image.GestureRecognizers>
@@ -52,8 +60,12 @@
                 </Grid>
                 
                 <Grid HeightRequest="100" WidthRequest="100">
-                    <BoxView BackgroundColor="ForestGreen" WidthRequest="100" HeightRequest="100"/>
-                    <Image
+                        <BoxView BackgroundColor="ForestGreen" WidthRequest="100" HeightRequest="100">
+                            <BoxView.GestureRecognizers>
+                                <TapGestureRecognizer Tapped="OnThumbnailTapped"/>
+                            </BoxView.GestureRecognizers>
+                        </BoxView>
+                        <Image
                             Source="goryl.png"
                             WidthRequest="90"
                             HeightRequest="90">
@@ -64,7 +76,11 @@
                 </Grid>
                 
                     <Grid HeightRequest="100" WidthRequest="100">
-                        <BoxView BackgroundColor="Blue" WidthRequest="100" HeightRequest="100"/>
+                        <BoxView BackgroundColor="Blue" WidthRequest="100" HeightRequest="100">
+                            <BoxView.GestureRecognizers>
+                                <TapGestureRecognizer Tapped="OnThumbnailTapped"/>
+                            </BoxView.GestureRecognizers>
+                        </BoxView>
                         <Image
                             Source="goryl.png"
                             WidthRequest="90"
@@ -76,7 +92,11 @@
                     </Grid>
                 
                     <Grid HeightRequest="100" WidthRequest="100">
-                        <BoxView BackgroundColor="Yellow" WidthRequest="100" HeightRequest="100"/>
+                        <BoxView BackgroundColor="Yellow" WidthRequest="100" HeightRequest="100">
+                            <BoxView.GestureRecognizers>
+                                <TapGestureRecognizer Tapped="OnThumbnailTapped"/>
+                            </BoxView.GestureRecognizers>
+                        </BoxView>
                         <Image
                             Source="goryl.png"
                             WidthRequest="90"
@@ -88,7 +108,11 @@
                     </Grid>
                 
                     <Grid HeightRequest="100" WidthRequest="100">
-                        <BoxView BackgroundColor="Pink" WidthRequest="100" HeightRequest="100"/>
+                        <BoxView BackgroundColor="Pink" WidthRequest="100" HeightRequest="100">
+                            <BoxView.GestureRecognizers>
+                                <TapGestureRecognizer Tapped="OnThumbnailTapped"/>
+                            </BoxView.GestureRecognizers>
+                        </BoxView>
                         <Image
                             Source="goryl.png"
                             WidthRequest="90"
@@ -100,7 +124,11 @@
                     </Grid>
                 
                     <Grid HeightRequest="100" WidthRequest="100">
-                        <BoxView BackgroundColor="Grey" WidthRequest="100" HeightRequest="100"/>
+                        <BoxView BackgroundColor="Grey" WidthRequest="100" HeightRequest="100">
+                            <BoxView.GestureRecognizers>
+                                <TapGestureRecognizer Tapped="OnThumbnailTapped"/>
+                            </BoxView.GestureRecognizers>
+                        </BoxView>
                         <Image
                             Source="goryl.png"
                             WidthRequest="90"
@@ -112,7 +140,11 @@
                     </Grid>
                 
                     <Grid HeightRequest="100" WidthRequest="100">
-                        <BoxView BackgroundColor="Aqua" WidthRequest="100" HeightRequest="100"/>
+                        <BoxView BackgroundColor="Aqua" WidthRequest="100" HeightRequest="100">
+                            <BoxView.GestureRecognizers>
+                                <TapGestureRecognizer Tapped="OnThumbnailTapped"/>
+                            </BoxView.GestureRecognizers>
+                        </BoxView>
                         <Image
                             Source="goryl.png"
                             WidthRequest="90"
@@ -124,7 +156,11 @@
                     </Grid>
                 
                     <Grid HeightRequest="100" WidthRequest="100">
-                        <BoxView BackgroundColor="MediumPurple" WidthRequest="100" HeightRequest="100"/>
+                        <BoxView BackgroundColor="MediumPurple" WidthRequest="100" HeightRequest="100">
+                            <BoxView.GestureRecognizers>
+                                <TapGestureRecognizer Tapped="OnThumbnailTapped"/>
+                            </BoxView.GestureRecognizers>
+                        </BoxView>
                         <Image
                             Source="goryl.png"
                             WidthRequest="90"
@@ -136,7 +172,11 @@
                     </Grid>
               
                     <Grid HeightRequest="100" WidthRequest="100">
-                        <BoxView BackgroundColor="GreenYellow" WidthRequest="100" HeightRequest="100"/>
+                        <BoxView BackgroundColor="GreenYellow" WidthRequest="100" HeightRequest="100">
+                            <BoxView.GestureRecognizers>
+                                <TapGestureRecognizer Tapped="OnThumbnailTapped"/>
+                            </BoxView.GestureRecognizers>
+                        </BoxView>
                         <Image
                             Source="goryl.png"
                             WidthRequest="90"
@@ -159,16 +199,16 @@
             <HorizontalStackLayout HorizontalOptions="Center">
                 
             <Button 
-                Text="Poprzednia strona"
+                Text="⬅Poprzednia strona⬅"
                 BackgroundColor="Orange"
                 TextColor="White"
-                WidthRequest="150"
+                WidthRequest="170"
                 Margin="10"/>
                 <Button 
-                Text="Następna strona"
+                Text="⮕Następna strona⮕"
                 BackgroundColor="Orange"
                 TextColor="White"
-                WidthRequest="150"
+                WidthRequest="170"
                 Margin="10"/>
                 
             </HorizontalStackLayout>
