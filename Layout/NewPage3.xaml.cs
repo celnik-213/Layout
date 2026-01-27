@@ -26,7 +26,7 @@ public partial class NewPage3 : ContentPage
 nazwa funkcji: OnSubmiteClicked
 opis funkcji: Funkcja sprawdza czy w pola zosta³a wpisana wartoœæ lub czy nie posiada pól wype³nionych spacjami. W zale¿noœci od wyniku sprawdzenia funkcja wyœwielta alert.
 parametry: brak
-zwracany typ i opis: Funkcja zwraca alert z wiadomoœci¹ w zale¿noœci od wyniku sprawdzenia instrukcji warunkowej.
+zwracany typ i opis: brak 
 autor: Wiktor Mañkut
 ************************************************
 */
