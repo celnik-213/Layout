@@ -3,10 +3,85 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="Layout.NewPage4"
              Title="NewPage4">
-    <VerticalStackLayout>
-        <Label 
-            Text="Welcome to .NET MAUI!"
-            VerticalOptions="Center" 
-            HorizontalOptions="Center" />
+    <VerticalStackLayout HorizontalOptions="Center">
+        <Label
+            Text="Powiadomienia: "
+            FontSize="28"/>
+        <HorizontalStackLayout Spacing="10">
+            <Label
+            Text="Włącz powiadomienia push"
+                FontSize="20"/>
+            <Switch/>
+        </HorizontalStackLayout>
+
+        <HorizontalStackLayout Spacing="10" >
+            <Label
+            Text="Powiadomienia e-mail"
+                FontSize="20"/>
+            <Switch/>
+        </HorizontalStackLayout>
+
+        <HorizontalStackLayout Spacing="10">
+            <Label
+            Text="Powiadomienia SMS"
+                FontSize="20"/>
+            <Switch/>
+        </HorizontalStackLayout>
+        <Label
+            Text="Wygląd: "
+            FontSize="28"/>
+        <HorizontalStackLayout Spacing="10" >
+        <Label
+            Text="Tryb Ciemny"
+            FontSize="20"/>
+            <Switch/>
+        </HorizontalStackLayout>
+        <HorizontalStackLayout WidthRequest="500" Spacing="10">
+            <Slider
+                x:Name="Slider"
+                Maximum="24"
+                Minimum="12"
+                Value="16"
+                WidthRequest="300"
+                MinimumTrackColor="Green"
+                MaximumTrackColor="Red"
+                ThumbColor="Black"/>
+            <Label
+                BindingContext="{x:Reference Slider}"
+                Text="{Binding Value, StringFormat='Rozmiar czcionki to {0:F0}'}"
+                HorizontalOptions="Center"
+                />
+        </HorizontalStackLayout>
+            <Label
+            Text="Prywatność: "
+            FontSize="28"
+                HorizontalOptions="Center"
+            />
+        <HorizontalStackLayout HorizontalOptions="Center">
+            <Label
+                Text="Udostepniaj dane analityczne "
+                FontSize="20"/>
+            <CheckBox
+                />
+        </HorizontalStackLayout>
+        <HorizontalStackLayout HorizontalOptions="Center"> 
+            <Label
+        Text="Personalizowane reklamy "
+        FontSize="20"/>
+            <CheckBox
+        />
+        </HorizontalStackLayout>
+        <Label
+            Text="Stopka: "
+            FontSize="28"
+            HorizontalOptions="Center"/>
+        <HorizontalStackLayout HorizontalOptions="Center" Spacing="10">
+            <Button
+                Text="Zapisz ustawienia"
+                BackgroundColor="Green"/>
+            <Button
+                Text="Przywróć domyślne"
+                BackgroundColor="Grey"/>
+        </HorizontalStackLayout>
     </VerticalStackLayout>
 </ContentPage>
