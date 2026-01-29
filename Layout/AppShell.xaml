@@ -7,26 +7,30 @@
     Title="Layout">
     <TabBar>
         
-    <ShellContent
-        Title="Home"
-        ContentTemplate="{DataTemplate local:MainPage}"
-        Route="MainPage" />
+        <ShellContent
+            Title="Home"
+            ContentTemplate="{DataTemplate local:MainPage}"
+            Route="MainPage" />
 
         <ShellContent
-    Title="NewPage1"
-    ContentTemplate="{DataTemplate local:NewPage1}"
-    Route="NewPage1" />
+            Title="17.3"
+            ContentTemplate="{DataTemplate local:NewPage1}"
+            Route="NewPage1" />
         <ShellContent
-Title="NewPage2"
-ContentTemplate="{DataTemplate local:NewPage2}"
-Route="NewPage2" />
+            Title="17.4"
+            ContentTemplate="{DataTemplate local:NewPage2}"
+            Route="NewPage2" />
         <ShellContent
-Title="NewPage3"
-ContentTemplate="{DataTemplate local:NewPage3}"
-Route="NewPage3" />
+            Title="18.2"
+            ContentTemplate="{DataTemplate local:NewPage3}"
+            Route="NewPage3" />
         <ShellContent
-Title="NewPage4"
-ContentTemplate="{DataTemplate local:NewPage4}"
-Route="NewPage4" />
+            Title="18.3"
+            ContentTemplate="{DataTemplate local:NewPage4}"
+            Route="NewPage4" />
+        <ShellContent
+            Title="18.4"
+            ContentTemplate="{DataTemplate local:NewPage5}"
+            Route="NewPage4" />
     </TabBar>
 </Shell>

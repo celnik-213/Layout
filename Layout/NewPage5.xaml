@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Layout.NewPage5"
+             Title="NewPage5">
+    <VerticalStackLayout
+        WidthRequest="500">
+        <Label 
+            Text="Kalkulator napiwków!"
+            VerticalOptions="Center" 
+            HorizontalOptions="Center"
+            FontAttributes="Bold"
+            FontSize="28"/>
+        <Entry
+            WidthRequest="500"
+            Text="Kwota rachunku"
+            Keyboard="Numeric"
+            VerticalOptions="Center"
+            HorizontalOptions="Center"/>
+        <Slider
+            HorizontalOptions="Center"
+            x:Name="Slider"
+            Maximum="30"
+            Minimum="0"
+            Value="15"
+            WidthRequest="500"
+            MinimumTrackColor="Green"
+            MaximumTrackColor="Red"
+            ThumbColor="Black"/>
+        <Label
+            BindingContext="{x:Reference Slider}"
+            Text="{Binding Value, StringFormat='Procent napiwku: {0:F0}'}"
+            HorizontalOptions="Center"/>
+        <HorizontalStackLayout Spacing="5">
+            <Label
+            Text="Podziel rachunek"
+            FontSize="24"/>
+        <Switch
+            IsToggled="False"
+            x:Name="podziel"
+            Toggled="LiczbaOsob"/>
+        </HorizontalStackLayout>
+        <Entry
+            WidthRequest="500"
+            Text="Liczba osób"
+            x:Name="osoby"
+            IsVisible="False"/>
+
+    </VerticalStackLayout>
+</ContentPage>

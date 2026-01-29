@@ -5,39 +5,51 @@
              Title="NewPage4">
     <VerticalStackLayout HorizontalOptions="Center">
         <Label
+            HorizontalOptions="Center"
             Text="Powiadomienia: "
             FontSize="28"/>
-        <HorizontalStackLayout Spacing="10">
+        <HorizontalStackLayout Spacing="10" HorizontalOptions="Center">
             <Label
             Text="Włącz powiadomienia push"
                 FontSize="20"/>
-            <Switch/>
+            <Switch
+                x:Name="Push"
+                IsToggled="False"/>
         </HorizontalStackLayout>
 
-        <HorizontalStackLayout Spacing="10" >
+        <HorizontalStackLayout Spacing="10" HorizontalOptions="Center">
             <Label
             Text="Powiadomienia e-mail"
                 FontSize="20"/>
-            <Switch/>
+            <Switch
+                x:Name="Email"
+                IsToggled="False"/>
         </HorizontalStackLayout>
 
-        <HorizontalStackLayout Spacing="10">
+        <HorizontalStackLayout Spacing="10" HorizontalOptions="Center">
             <Label
             Text="Powiadomienia SMS"
                 FontSize="20"/>
-            <Switch/>
+            <Switch
+                x:Name="Sms"
+                IsToggled="False"/>
         </HorizontalStackLayout>
         <Label
+            HorizontalOptions="Center"
             Text="Wygląd: "
             FontSize="28"/>
-        <HorizontalStackLayout Spacing="10" >
+        <HorizontalStackLayout Spacing="10" HorizontalOptions="Center" >
         <Label
+            HorizontalOptions="Center"
             Text="Tryb Ciemny"
             FontSize="20"/>
-            <Switch/>
+            <Switch
+                x:Name="Ciemny"
+                IsToggled="False"/>
         </HorizontalStackLayout>
-        <HorizontalStackLayout WidthRequest="500" Spacing="10">
+        <HorizontalStackLayout WidthRequest="500" Spacing="10" HorizontalOptions="Center">
             <Slider
+                HorizontalOptions="Center"
                 x:Name="Slider"
                 Maximum="24"
                 Minimum="12"
@@ -62,14 +74,16 @@
                 Text="Udostepniaj dane analityczne "
                 FontSize="20"/>
             <CheckBox
-                />
+                IsChecked="False"
+                x:Name="Analityczne"/>
         </HorizontalStackLayout>
         <HorizontalStackLayout HorizontalOptions="Center"> 
             <Label
         Text="Personalizowane reklamy "
         FontSize="20"/>
             <CheckBox
-        />
+                IsChecked="False"
+                x:Name="Reklamy"/>
         </HorizontalStackLayout>
         <Label
             Text="Stopka: "
@@ -78,7 +92,8 @@
         <HorizontalStackLayout HorizontalOptions="Center" Spacing="10">
             <Button
                 Text="Zapisz ustawienia"
-                BackgroundColor="Green"/>
+                BackgroundColor="Green"
+                Clicked="OnSaveClicked"/>
             <Button
                 Text="Przywróć domyślne"
                 BackgroundColor="Grey"/>
