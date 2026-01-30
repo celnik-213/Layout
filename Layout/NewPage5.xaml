@@ -31,6 +31,19 @@
             BindingContext="{x:Reference Slider}"
             Text="{Binding Value, StringFormat='Procent napiwku: {0:F0}'}"
             HorizontalOptions="Center"/>
+        <Label
+            Text="Napiwek: 0.00"
+            x:Name="napiwek"
+            FontSize="24"/>
+        <Label
+            Text="Suma: 0.00"
+            x:Name="suma"
+            FontSize="24"/>
+        <Label
+            IsVisible="False"
+            x:Name="naosobesuma"
+            Text="Na osobę: 0.00"
+            FontSize="24"/>
         <HorizontalStackLayout Spacing="5">
             <Label
             Text="Podziel rachunek"
@@ -38,13 +51,37 @@
         <Switch
             IsToggled="False"
             x:Name="podziel"
-            Toggled="LiczbaOsob"/>
+            Toggled="LiczbaOsob"
+            ThumbColor="DarkOrange"
+            OnColor="Black"/>
         </HorizontalStackLayout>
         <Entry
             WidthRequest="500"
             Text="Liczba osób"
             x:Name="osoby"
             IsVisible="False"/>
+        <HorizontalStackLayout Spacing="5">
+        <Label
+            Text="Szybki napiwek:"
+            FontAttributes="Bold"
+            FontSize="24"/>
+            <Button
+                x:Name="napiwek10"
+                Text="10%"
+                Clicked="SliderTip10"
+                BackgroundColor="DarkOrange"/>
+            <Button
+                x:Name="napiwek15"
+                Text="15%"
+                Clicked="SliderTip15"
+                BackgroundColor="DarkOrange"/>
+            <Button
+                x:Name="napiwek20"
+                Text="20%"
+                Clicked="SliderTip20"
+                BackgroundColor="DarkOrange"/>
+        </HorizontalStackLayout>
+        
 
     </VerticalStackLayout>
 </ContentPage>
