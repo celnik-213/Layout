@@ -12,6 +12,7 @@
             FontAttributes="Bold"
             FontSize="28"/>
         <Entry
+            x:Name="Kwota"
             WidthRequest="500"
             Text="Kwota rachunku"
             Keyboard="Numeric"
