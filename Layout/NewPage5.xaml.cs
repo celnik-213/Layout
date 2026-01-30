@@ -34,4 +34,6 @@ public partial class NewPage5 : ContentPage
     {
         Slider.Value = 20;
     }
+
+
 }
