@@ -17,7 +17,8 @@
             Placeholder="Kwota rachunku"
             Keyboard="Numeric"
             VerticalOptions="Center"
-            HorizontalOptions="Center"/>
+            HorizontalOptions="Center"
+            TextChanged="CenaUpdate"/>
         <Slider
             HorizontalOptions="Center"
             x:Name="Slider"
@@ -27,7 +28,8 @@
             WidthRequest="500"
             MinimumTrackColor="Green"
             MaximumTrackColor="Red"
-            ThumbColor="Black"/>
+            ThumbColor="Black"
+            ValueChanged="NapiwekUpdate"/>
         <Label
             BindingContext="{x:Reference Slider}"
             Text="{Binding Value, StringFormat='Procent napiwku: {0:F0}'}"
@@ -61,7 +63,8 @@
             WidthRequest="500"
             Placeholder="Liczba osób"
             x:Name="Osoby"
-            IsVisible="False"/>
+            IsVisible="False"
+            TextChanged="NapiwekUpdate"/>
         <HorizontalStackLayout Spacing="5">
         <Label
             Text="Szybki napiwek:"

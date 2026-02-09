@@ -1,4 +1,3 @@
-using Bumptech.Glide.Load.Resource.Bitmap;
 using System.ComponentModel;
 
 namespace Layout;
@@ -62,8 +61,12 @@ public partial class NewPage5 : ContentPage
                 double cena = double.Parse(Kwota.Text);
                 double cenaNapiwku = cena * (NapiwekProcent / 100);
 				double CenaKoncowa = cena + cenaNapiwku;
-				int liczbaosob = 
-            }
+				int liczbaosob = int.Parse(Osoby.Text);
+				double sumaNaOsobe = CenaKoncowa / liczbaosob;
+				suma.Text = $"Suma do zap³aty wynosi: {CenaKoncowa:F2}";
+				naosobesuma.Text = $"Suma do zap³aty na osobê wynosi: {sumaNaOsobe:F2}";
+                napiwek.Text = $"Napiwek: {cenaNapiwku:F2}";
+			}
 		}
 	}
 
