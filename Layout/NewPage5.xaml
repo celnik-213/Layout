@@ -14,7 +14,7 @@
         <Entry
             x:Name="Kwota"
             WidthRequest="500"
-            Text="Kwota rachunku"
+            Placeholder="Kwota rachunku"
             Keyboard="Numeric"
             VerticalOptions="Center"
             HorizontalOptions="Center"/>
@@ -57,9 +57,10 @@
             OnColor="Black"/>
         </HorizontalStackLayout>
         <Entry
+            Keyboard="Numeric"
             WidthRequest="500"
-            Text="Liczba osób"
-            x:Name="osoby"
+            Placeholder="Liczba osób"
+            x:Name="Osoby"
             IsVisible="False"/>
         <HorizontalStackLayout Spacing="5">
         <Label
